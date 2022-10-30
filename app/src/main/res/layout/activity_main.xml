@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayoutid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:stretchColumns="1"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/walmart" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:autofillHints=""
+            android:text="@string/sign_into_account"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textColorHint="#78909C"
+            android:textSize="34sp" />
+    </TableRow>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:autofillHints=""
+                android:labelFor="@id/email"
+                android:text="@string/enter_email"
+                android:textColorHint="#78909C"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:autofillHints=""
+                android:inputType="textEmailAddress"
+                android:textColorHint="#78909C"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:autofillHints=""
+                android:labelFor="@id/password"
+                android:text="@string/enter_password"
+                android:textColorHint="#78909C"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:autofillHints=""
+                android:inputType="textPassword"
+                android:textColorHint="#78909C"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="392dp"
+            android:layout_height="48dp"
+            android:autoLink="all"
+            android:autofillHints=""
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/signIn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:backgroundTint="@color/blue"
+                tools:ignore="TextContrastCheck" />
+
+        </TableRow>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:autofillHints=""
+                android:gravity="center"
+                android:text="@string/have_no_account"
+                android:textColor="@color/black"
+                android:textColorHint="#78909C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/create_account"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="2dp"
+            tools:ignore="TextContrastCheck" />
+
+
+    </LinearLayout>
+
+
+
+</TableLayout>

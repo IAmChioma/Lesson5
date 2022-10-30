@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingActivity">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text="Welcome"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Shop by Categories"
+        android:textColor="#373535"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <ImageButton
+            android:id="@+id/btnElectronics"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/btnClothing"
+            app:layout_constraintHorizontal_bias="0.577"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img1" />
+
+        <TextView
+            android:id="@+id/elect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Electronics"
+            android:textColor="#212121"
+            app:layout_constraintEnd_toEndOf="@+id/btnElectronics"
+            app:layout_constraintStart_toStartOf="@+id/btnElectronics"
+            app:layout_constraintTop_toBottomOf="@+id/btnElectronics" />
+
+        <ImageButton
+            android:id="@+id/btnClothing"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnElectronics"
+            app:srcCompat="@drawable/img2" />
+
+        <TextView
+            android:id="@+id/cloth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Clothing"
+            android:textColor="#FF212121"
+            app:layout_constraintEnd_toEndOf="@+id/btnClothing"
+            app:layout_constraintStart_toStartOf="@+id/btnClothing"
+            app:layout_constraintTop_toBottomOf="@+id/btnClothing" />
+
+        <ImageButton
+            android:id="@+id/btnBeauty"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="@+id/btnElectronics"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnElectronics"
+            app:layout_constraintTop_toBottomOf="@+id/elect"
+            app:srcCompat="@drawable/img3" />
+
+        <ImageButton
+            android:id="@+id/btnFood"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="@+id/btnClothing"
+            app:layout_constraintStart_toStartOf="@+id/btnClothing"
+            app:layout_constraintTop_toTopOf="@+id/btnBeauty"
+            app:srcCompat="@drawable/img4" />
+
+        <TextView
+            android:id="@+id/beauty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Beauty"
+            android:textColor="#FF212121"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnBeauty"
+            app:layout_constraintStart_toStartOf="@+id/btnBeauty"
+            app:layout_constraintTop_toBottomOf="@+id/btnBeauty" />
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Food"
+            android:textColor="#FF212121"
+            app:layout_constraintBottom_toBottomOf="@+id/beauty"
+            app:layout_constraintEnd_toEndOf="@+id/btnClothing"
+            app:layout_constraintStart_toStartOf="@+id/btnFood"
+            app:layout_constraintTop_toBottomOf="@+id/btnFood" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
