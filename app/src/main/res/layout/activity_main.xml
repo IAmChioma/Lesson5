@@ -32,13 +32,16 @@
             android:layout_height="wrap_content"
             android:layout_span="2"
             android:autofillHints=""
-            android:text="@string/sign_into_account"
             android:gravity="center_horizontal"
+            android:text="@string/sign_into_account"
             android:textColor="@color/black"
             android:textColorHint="#78909C"
-            android:textSize="34sp" />
+            android:textSize="24sp" />
     </TableRow>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -153,7 +156,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="35dp" />
+            android:layout_height="48dp" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -170,14 +173,14 @@
                 android:text="@string/have_no_account"
                 android:textColor="@color/black"
                 android:textColorHint="#78909C"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
         </TableRow>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="30dp" />
 
 
         <Button

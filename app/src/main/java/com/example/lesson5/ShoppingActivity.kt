@@ -11,7 +11,6 @@ class ShoppingActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.shopping_activity)
 
-//        val intent = getIntent()
         val username = intent.getStringExtra("user")
         welcomeTextView.text = "Welcome $username"
 
